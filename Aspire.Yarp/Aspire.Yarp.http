@@ -1,0 +1,6 @@
+@Aspire.Yarp_HostAddress = http://localhost:5188
+
+GET {{Aspire.Yarp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

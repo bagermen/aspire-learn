@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v1.0.0/rewriteplugin.rewritesfile.schema.json",
+    "rewrites": [
+        {
+            "in": {
+                "url": "^(https?)://localhost(.*)"
+            },
+            "out": {
+                "url": "$1://host.docker.internal$2"
+            }
+        }
+    ]
+}

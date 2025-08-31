@@ -1,0 +1,32 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v1.0.0/rc.schema.json",
+    "plugins": [
+        {
+            "name": "GenericRandomErrorPlugin",
+            "enabled": true,
+            "pluginPath": "~appFolder/plugins/DevProxy.Plugins.dll",
+            "configSection": "genericRandomErrorPlugin"
+        },
+        {
+            "name": "RewritePlugin",
+            "enabled": true,
+            "pluginPath": "~appFolder/plugins/DevProxy.Plugins.dll",
+            "configSection": "rewritePlugin"
+        }
+    ],
+    "urlsToWatch": [
+        "http://localhost"
+    ],
+    "genericRandomErrorPlugin": {
+        "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v1.0.0/genericrandomerrorplugin.schema.json",
+        "errorsFile": "errors.json",
+        "rate": 100
+    },
+    "rewritePlugin": {
+        "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v1.0.0/rewriteplugin.schema.json",
+        "rewritesFile": "rewrites.json"
+    },
+    "logLevel": "information",
+    "newVersionNotification": "stable",
+    "showSkipMessages": true
+}

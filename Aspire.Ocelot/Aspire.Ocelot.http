@@ -1,0 +1,6 @@
+@Aspire.Ocelot_HostAddress = http://localhost:5058
+
+GET {{Aspire.Ocelot_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

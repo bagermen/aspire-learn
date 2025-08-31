@@ -1,0 +1,18 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/ocelot/{everything}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "ServiceName": "aspire-api"
+    }
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Type": "AspireServiceProvider"
+    }
+  }
+}

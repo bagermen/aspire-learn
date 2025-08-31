@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/dev-proxy/main/schemas/v1.0.0/genericrandomerrorplugin.errorsfile.schema.json",
+    "errors": [
+        {
+            "request": {
+                "url": "https://*/*"
+            },
+            "responses": [
+                {
+                    "statusCode": 400,
+                    "body": {
+                        "message": "Bad Request",
+                        "details": "The server cannot process the request due to invalid syntax."
+                    }
+                }
+            ]
+        }
+    ]
+}
